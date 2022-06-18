@@ -1,0 +1,30 @@
+﻿<Page x:Class="pavilions.Views.Pages.ShoppingCentersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:pavilions.ViewModels"
+      xmlns:local="clr-namespace:pavilions.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1000"
+      Title="ShoppingCentersPage">
+    <!--<Page.DataContext>
+        <vm: ShoppingCenterViewModel/>
+    </Page.DataContext>-->
+    <Grid Style="{StaticResource GridBackGround}">
+        <ListView>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Название" Width="70" DisplayMemberBinding="{Binding shopping_center_name}"/>
+                    <GridViewColumn Header="Статус" Width="100" DisplayMemberBinding="{Binding shopping_center_name}"/>
+                    <GridViewColumn Header="Количество павильонов" Width="150" DisplayMemberBinding="{Binding shopping_center_name}"/>
+                    <GridViewColumn Header="Город" Width="70" DisplayMemberBinding="{Binding shopping_center_name}"/>
+                    <GridViewColumn Header="Стоимости постройки ТЦ" Width="150" DisplayMemberBinding="{Binding shopping_center_name}"/>
+                    <GridViewColumn Header="Этажность" Width="70" DisplayMemberBinding="{Binding shopping_center_name}"/>
+                    <GridViewColumn Header="Коэффициент добавочной стоимости ТЦ" Width="240" DisplayMemberBinding="{Binding shopping_center_name}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+    </Grid>
+</Page>
